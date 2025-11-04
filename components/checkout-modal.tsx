@@ -5,9 +5,9 @@ import { motion } from "motion/react"
 import { X, CreditCard, ShoppingCartIcon as Paypal, Apple } from "lucide-react"
 import { useState, useEffect } from "react"
 
-// @ts-ignore
+// @ts-ignore - stablepay-sdk types not available
 import StablePay from "stablepay-sdk";
-// @ts-ignore
+// @ts-ignore - CSS import for stablepay-sdk
 import "stablepay-sdk/dist/esm/styles.css";
 
 interface CheckoutModalProps {
@@ -17,6 +17,8 @@ interface CheckoutModalProps {
 }
 
 export function CheckoutModal({ total, onClose, onComplete }: CheckoutModalProps) {
+  // onComplete will be used when StablePay widget completes
+  void onComplete; // Suppress unused variable warning
   const [selectedPayment, setSelectedPayment] = useState<string | null>(null)
   const [networkSelector, setNetworkSelector] = useState<StablePay.NetworkSelector | null>(null)
 
@@ -128,7 +130,7 @@ interface PaymentOptionProps {
   onSelect: () => void
 }
 
-function PaymentOption({ id, label, icon, selected, onSelect }: PaymentOptionProps) {
+function PaymentOption({ label, icon, selected, onSelect }: PaymentOptionProps) {
   return (
     <div
       onClick={onSelect}
