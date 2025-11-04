@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react"
 import { X } from "lucide-react"
-import { useState } from "react"
 import type { Product } from "./data"
 
 interface ProductModalProps {
@@ -12,7 +11,6 @@ interface ProductModalProps {
 }
 
 export function ProductModal({ product, onClose, onAddToCart }: ProductModalProps) {
-  const [quantity, setQuantity] = useState(1)
 
   return (
     <>
