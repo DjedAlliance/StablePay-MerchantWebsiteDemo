@@ -85,7 +85,7 @@ export function CartDrawer({ cart, onClose, onRemoveFromCart, onCheckoutComplete
           <div className="p-4 border-t border-zinc-800">
             <div className="flex justify-between mb-4">
               <span className="text-base">Total</span>
-              <span className="text-base font-medium">${total.toFixed(2)}</span>
+              <span className="text-base font-medium">${total < 0.01 ? total.toFixed(6) : total.toFixed(2)}</span>
             </div>
             <button
               className={`w-full py-3 text-base font-medium rounded-lg transition-colors ${
