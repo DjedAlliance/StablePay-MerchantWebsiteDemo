@@ -73,7 +73,7 @@ They can then proceed to checkout and pay using StablePay.
 You can try the demo at: https://demo.stablepay.stability.nexus/ .
 
 
-## **How to Use StablePay on a Website**
+## **How to Embed StablePay on a Website**
 
 Look at the source code in this repo. The most relevant files are:
 
