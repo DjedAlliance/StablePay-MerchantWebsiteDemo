@@ -58,34 +58,110 @@
 ---
 
 <!-- Project Description (Start from here) -->
+# StablePay Demo Merchant Website
 
-StablePay is a fully decentralized solution for online payments. 
-When the StablePay widget is embedded in a website, the widget interacts 
-directly with smart contracts on blockchains, with no intermediary servers.
+StablePay Demo Merchant Website is an open-source demo application that showcases how
+to accept cryptocurrency and stablecoin payments using the StablePay SDK without relying
+on centralized fintech infrastructure.
 
-For more information about StablePay, please visit [StablePay's Main Repository](https://github.com/DjedAlliance/StablePay).
+StablePay is a fully decentralized payment solution. When embedded in a website, the
+StablePay widget interacts directly with smart contracts on supported blockchains,
+with no intermediary servers.
 
-This repository contains a demo merchant website using the StablePay widget.
+This repository contains a **demo merchant website** that allows customers to:
+- Browse products
+- Add products to a shopping cart
+- Checkout and pay using the StablePay widget
 
-This demo website allows customers to choose products and add them to a shopping cart. 
-They can then proceed to checkout and pay using StablePay.
+A live demo is available at:
+https://demo.stablepay.stability.nexus/
 
-You can try the demo at: https://demo.stablepay.stability.nexus/ .
-
-
-## **How to Embed StablePay on a Website**
-
-Look at the source code in this repo. The most relevant files are:
-
-* [checkout-modal.tsx](https://github.com/DjedAlliance/StablePay-MerchantWebsiteDemo/blob/main/components/checkout-modal.tsx) - here you can see how the StablePay widget was embedded in a checkout flow.
-* [package.json](https://github.com/DjedAlliance/StablePay-MerchantWebsiteDemo/blob/main/package.json) - here you can see how to declare the `stablepay-sdk` as a dependency, so that it can be easily imported.
-<!-- Use Back Button after each section -->
-<div align="right"><kbd><a href="#readme-top">↑ Back to top ↑</a></kbd></div>
+For more information about StablePay, please visit the
+[StablePay Main Repository](https://github.com/DjedAlliance/StablePay).
 
 ---
 
-<!-- Don't delete it -->
-<!-- Funding Badge -->
-<div align="center" name="fund">
-<a href="https://docs.stability.nexus/about-us/fund-us">Fund This Project</a>
-</div>
+## Project Maturity
+
+The checklist below reflects the **current state** of this demo project:
+
+- [ ] The project has a logo.
+- [ ] The project has a favicon.
+
+### Protocol
+- [ ] The protocol has been described and formally specified in a paper.
+- [ ] The protocol has had its main properties mathematically proven.
+- [ ] The protocol has been formally verified.
+
+### Smart Contracts
+- [ ] Smart contracts were thoroughly reviewed by at least two knights of The Stable Order.
+- [ ] Smart contracts were deployed to:
+  - [ ] Ergo
+  - [ ] Cardano
+  - [ ] Ethereum Classic
+  - [ ] Ethereum
+  - [ ] Polygon
+  - [ ] BSC
+  - [ ] Base
+
+### Mobile App
+- [ ] The mobile app has an About page containing the Stability Nexus's logo and social links.
+- [ ] The mobile app is available as a release in this repository.
+- [ ] The mobile app is available in relevant app stores.
+
+### Web Frontend
+- [ ] The web frontend has proper title and metadata.
+- [ ] The web frontend has proper Open Graph metadata.
+- [ ] The web frontend has a footer containing the Stability Nexus logo and social links.
+- [ ] The web frontend is fully static and client-side.
+- [ ] The web frontend is deployed to GitHub Pages via a GitHub Workflow.
+- [x] The web frontend is accessible through the https://demo.stablepay.stability.nexus domain.
+- [ ] The project is listed in https://stability.nexus/protocols.
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- TypeScript
+
+### Blockchain
+- StablePay SDK
+- Ethers.js
+- EVM-compatible smart contracts
+
+---
+
+## How to Embed StablePay on a Website
+
+To understand how StablePay is integrated into a checkout flow, refer to the following
+files in this repository:
+
+- `checkout-modal.tsx`  
+  Demonstrates how the StablePay widget is embedded within the checkout process.
+
+- `package.json`  
+  Shows how the `stablepay-sdk` dependency is declared and imported.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js 18+
+- npm / yarn / pnpm
+- MetaMask or any compatible Web3 wallet browser extension
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/DjedAlliance/StablePay-MerchantWebsiteDemo.git
+cd StablePay-MerchantWebsiteDemo
+
