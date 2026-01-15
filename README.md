@@ -81,45 +81,6 @@ For more information about StablePay, please visit the
 
 ---
 
-## Project Maturity
-
-The checklist below reflects the **current state** of this demo project:
-
-- [ ] The project has a logo.
-- [ ] The project has a favicon.
-
-### Protocol
-- [ ] The protocol has been described and formally specified in a paper.
-- [ ] The protocol has had its main properties mathematically proven.
-- [ ] The protocol has been formally verified.
-
-### Smart Contracts
-- [ ] Smart contracts were thoroughly reviewed by at least two knights of The Stable Order.
-- [ ] Smart contracts were deployed to:
-  - [ ] Ergo
-  - [ ] Cardano
-  - [ ] Ethereum Classic
-  - [ ] Ethereum
-  - [ ] Polygon
-  - [ ] BSC
-  - [ ] Base
-
-### Mobile App
-- [ ] The mobile app has an About page containing the Stability Nexus's logo and social links.
-- [ ] The mobile app is available as a release in this repository.
-- [ ] The mobile app is available in relevant app stores.
-
-### Web Frontend
-- [ ] The web frontend has proper title and metadata.
-- [ ] The web frontend has proper Open Graph metadata.
-- [ ] The web frontend has a footer containing the Stability Nexus logo and social links.
-- [ ] The web frontend is fully static and client-side.
-- [ ] The web frontend is deployed to GitHub Pages via a GitHub Workflow.
-- [x] The web frontend is accessible through the https://demo.stablepay.stability.nexus domain.
-- [ ] The project is listed in https://stability.nexus/protocols.
-
----
-
 ## Tech Stack
 
 ### Frontend
